@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/python3 
 import re
 import sys 
 
@@ -10,4 +10,4 @@ for line in sys.stdin:
         re.search("[0-9]{4}", words[0]).group(0),
         float(re.sub("\$", "", words[-1])),
     )
-    print(f"{year}\t{salary}")
+    print(f"{year}\t{salary}\t1")
